@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 Add Your Book
+  br
+  form(action='add',method='POST')
+    div
+    label(for="Book ID") Book ID:
+    input(type="text" name='BookId' placeholder='Book ID')
+    br
+    div
+    label(for="Book Name") Book Name:
+    input(type="text" name='BookName' placeholder='Book Name')
+    br
+    div
+    label(for="Author Name") Author Name
+    input(type="text" name='AuthorName' placeholder='Author Name')
+    br
+    br
+    button(type='submit') ADD BOOK
+    
